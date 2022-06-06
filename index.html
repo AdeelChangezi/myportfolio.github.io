@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeel's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body onload="onLoad()">
+    <!------------------------------------------------------------------------->
+    <!-- NAVBAR SECTION -->
+    <!------------------------------------------------------------------------->
+    <nav class="navbar">
+        <div class="navItems">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menuButton" onclick="navSlide()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+    <!------------------------------------------------------------------------->
+    <!-- HOME SECTION -->
+    <!------------------------------------------------------------------------->
+    <section class="sections">
+        <section class="home" id="home">
+            <section class="containerHome">
+                <div class="contentHome">
+                    <div class="text">
+                        <p>Hello, I'm</p>
+                        <h1>Adeel Ali</h1>
+                        <p>Frontend Web Developer</p>
+                        <div class="buttons">
+                            <a class="cv" href="Adeel - CV.pdf" download="Adeel-CV.pdf">Download CV</a>
+                        </div>
+                    </div>
+                    <div class="picture">
+                        <img src="profile1.png" alt="profile picture">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!------------------------------------------------------------------------->
+        <!-- ABOUT SECTION -->
+        <!------------------------------------------------------------------------->
+        <section class="about" id="about" onwheel="hide()">
+            <section class="containerAbout">
+                <h2 class="aboutHeading">About Me</h2>
+                <div class="contentAbout">
+                    <div class="summary">
+                        <p id="summary">A versatile, energetic, keen-to-learn software developer with strong foundation
+                            of
+                            programming, math,
+                            and problem solving, coupled with excellent leadership, communication and teamwork
+                            qualities, with a
+                            never-filling appetite for knowledge and a goal to work with honesty and resilience.</p>
+                    </div>
+                    <div class="mainContentAbout">
+                        <div class="skills">
+                            <input type="checkbox" name="one" id="one">
+                            <label for="one" onclick="func1()">Skills</label>
+                            <div class="skillsContent">
+                                <h5>Skills</h5>
+                                <div class="skillslogoCont">
+                                    <div class="skillslogo">
+                                        <div><img src="html.png" alt="skills"></div>
+                                        <div><img src="css.png" alt="skills"></div>
+                                        <div><img src="js.png" alt="skills"></div>
+                                        <div><img src="bootstrap.png" alt="skills"></div>
+                                        <div><img src="wordpress.png" alt="skills"></div>
+                                        <div><img src="git.png" alt="skills"></div>
+                                    </div>
+                                </div>
+                                <h5>Currently Working on</h5>
+                                <div class="currentlogoCont">
+                                    <div class="currentlogo">
+                                        <div><img src="react.png" alt="skills"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience">
+                            <input type="checkbox" name="second" id="second">
+                            <label for="second" onclick="func2()">Experience</label>
+                            <div class="exContent">
+                                <h5>Experience</h5>
+                                <h6>Coding Instructor</h6>
+                                <p>Orbit Ed. Islamabad, Pakistan</p>
+                                <p>(Oct 1, 2020 - Dec 31, 2020)</p>
+                                <ul>
+                                    <li>
+                                        <p>Teaching 6-15 y/o kids:</p>
+                                    </li>
+                                    <ul>
+                                        <li>
+                                            <p>Game development (Scratch)</p>
+                                        </li>
+                                        <li>
+                                            <p>Web development (Wordpress)</p>
+                                        </li>
+                                        <li>
+                                            <p>Android App development (MIT App Inventor)</p>
+                                        </li>
+                                        <li>
+                                            <p>Engineering & Robotics (Arduino)</p>
+                                        </li>
+                                    </ul>
+                                    <li>
+                                        <p>Designing course outlines, assignments, quizzes</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="education">
+                            <input type="checkbox" name="third" id="third">
+                            <label for="third" onclick="func3()">Education</label>
+                            <div class="edContent">
+                                <h5>Education</h5>
+                                <h6>MS Information Technology</h6>
+                                <p>NUST Islamabad, Pakistan</p>
+                                <p>CGPA 3.64</p>
+                                <p>(Oct 2020 - present)</p>
+                                <h6>BS Computer Science</h6>
+                                <p>COMSATS Abbottabad, Pakistan</p>
+                                <p>CGPA 3.84</p>
+                                <h5>Awards</h5>
+                                <p>BS - 2nd Position Holder</p>
+                                <p>BS - 3rd Position Holder</p>
+                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!------------------------------------------------------------------------->
+        <!-- WORK SECTION -->
+        <!------------------------------------------------------------------------->
+        <section class="work" id="work">
+            <section class="containerWork">
+                <h2>My Projects</h2>
+                <div class="workContainer">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="slide1">
+                                <div class="slides">
+                                    <h4>Personal Portfolio</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ullam
+                                        debitis corporis harum voluptates recusandae, omnis tempora ipsum
+                                        consequuntur doloremque?</p>
+                                    <img class="projectImage" src="website1.jpg" alt="portfolio">
+                                    <a class="workButton" href="https://adeelchangezi.github.io/" target="_blank">Visit
+                                        Project Page</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" id="slide2">
+                                <div class="slides">
+                                    <h4>Airlines Website</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ullam
+                                        debitis corporis harum voluptates recusandae, omnis tempora ipsum
+                                        consequuntur doloremque?</p>
+                                    <img class="projectImage" src="website1.jpg" alt="airlines">
+                                    <a class="workButton" href="https://adeelchangezi.github.io/" target="_blank">Visit
+                                        Project Page</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" id="slide3">
+                                <div class="slides">
+                                    <h4>Ecommerce Website</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ullam
+                                        debitis corporis harum voluptates recusandae, omnis tempora ipsum
+                                        consequuntur doloremque?</p>
+                                    <img class="projectImage" src="website1.jpg" alt="ecommerce">
+                                    <a class="workButton" href="https://adeelchangezi.github.io/" target="_blank">Visit
+                                        Project Page</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next" id="swiperButton"></div>
+                        <div class="swiper-button-prev" id="swiperButton"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!------------------------------------------------------------------------->
+        <!-- CONTACT SECTION -->
+        <!------------------------------------------------------------------------->
+        <section class="contact" id="contact">
+            <section class="containerContact">
+                <h2>Contact</h2>
+                <div class="subContainerContact">
+                    <div class="contactContent">
+                        <div class="formContainer">
+                            <form class="formContent" action="https://formspree.io/f/xpzbnzre" method="POST">
+                                <div class="names">
+                                    <input type="text" name="firstName" placeholder="First Name" required>
+                                    <input type="text" name="lastName" placeholder="Last Name" required>
+                                    <input type="email" name="email" placeholder="Your email address" required>
+                                </div>
+                                <textarea name="message" id="#textarea" cols="" rows="7"
+                                    placeholder="Your message..."></textarea>
+                                <button type="submit" class="submitButton">Send Message</button>
+                                <div class="call">
+                                    <img src="call.png" alt="call icon">
+                                    <label id="phoneNumber">+92 336 8456663</label>
+                                </div>
+                                <div class="icons">
+                                    <a href="https://facebook.com" target="_blank"><img src="fb.jpg"
+                                            alt="call icon"></a>
+                                    <a href="https://gmail.com" target="_blank"><img src="gm.png"
+                                            alt="call icon"></a>
+                                    <a href="https://instagram.com" target="_blank"><img src="in.png"
+                                            alt="call icon"></a>
+                                    <a href="https://linkedin.com" target="_blank"><img src="lk.png"
+                                            alt="call icon"></a>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright <img id="copyright" src="cp.png" alt="copyright"> 2022 Adeel's Portfolio</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- <a id="topIcon" href="#home"><img src="logos/top.png" alt="top icon"></a> -->
+    <!---------------------------------------->
+
+    <section class="circles">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+        <div class="circle6"></div>
+    </section>
+
+    <!---------------------------------------->
+
+    <script src="script.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
